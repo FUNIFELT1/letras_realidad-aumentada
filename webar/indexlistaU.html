@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/funifelt.ico">
-    <title>Lista "U"-WebAR</title>
+    <title>Letra "U"-WebAR</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
@@ -15,7 +15,10 @@
         const ruidoButton = document.querySelector("#buttonRuido");
         const antiguoButton = document.querySelector("#buttonAntiguo");
         const cuyButton = document.querySelector("#buttonCuy");
-        const enlaceImgRef = document.querySelector("#iRefLinkI");
+        
+        const continuarButton = document.querySelector("#buttonContinuar");
+        const pasoIButton = document.querySelector("#buttonPasoI");
+        const pasoIIButton = document.querySelector("#buttonPasoII");
 
         /* boton agua */
 
@@ -77,7 +80,7 @@
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.4 0.4 0.4");
+            .setAttribute("scale", "0.5 0.5 0.5");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.3 0");
@@ -102,7 +105,7 @@
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "7 7 7");
+            .setAttribute("scale", "11 11 11");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.2 0");
@@ -127,7 +130,7 @@
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.3 0.3 0.3");
+            .setAttribute("scale", "0.4 0.4 0.4");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.1 0");
@@ -141,12 +144,29 @@
           );
         });
 
-        /*click enlace imagen de referencia*/
+        /*botones tutorial*/
 
-        enlaceImgRef.addEventListener("click", ()=>{
-          document.getElementById("textoTutorial").innerHTML="";
+        pasoIButton.addEventListener("click", ()=>{
+          document.getElementById("divBotones").setAttribute("style","background-color: ;");
+          document.getElementById("buttonPasoI").setAttribute("style","visibility: collapse;");
+          document.getElementById("buttonPasoII").setAttribute("style","visibility: visible;");
+          document.getElementById("textoT").innerHTML="Descargue el código QR:<a href='/referenciaImg.png' download='/referenciaImg.png'><img class='imgQR' alt='' src='/referenciaImg.png'></a>O utilice la tarjeta física para proyectarlo en el recuadro que aparece en su pantalla.";
         });
-        
+
+        pasoIIButton.addEventListener("click", ()=>{
+          document.getElementById("divBotones").setAttribute("style","background-color: #92B8B4; border-radius: 10px; padding: 5px;");
+          document.getElementById("buttonPasoII").setAttribute("style","visibility: collapse;");
+          document.getElementById("buttonContinuar").setAttribute("style","visibility: visible;");
+          document.getElementById("textoT").innerHTML="Luego presione los botones y podrá ver cada una de las palabras.";
+        });
+
+        continuarButton.addEventListener("click", ()=>{
+          document.getElementById("divBotones").setAttribute("style","background-color: ;");
+          document.getElementById("textoTutorial").innerHTML="";
+          document.getElementById("textoTutorial").setAttribute("style","padding: 0;");
+          console.log("click paso 3"); 
+        });
+ 
       });
     </script>
   </head>
@@ -162,7 +182,7 @@
 
       <a-camera position="0 0 0" look-controls="enabled: true"></a-camera>
 
-      <div>
+      <div id="divBotones">
         <button type="button" id="buttonAgua">agua</button>
         <button type="button" id="buttonHueso">hueso</button>
         <button type="button" id="buttonRuido">ruido</button>
@@ -173,11 +193,15 @@
       <h1 class="textoCentral" id="textoTitulo">Bienvenidos a la realidad aumentada<br>Unidad dos: Diptongo - Letra U</br></h1>
         
       <div id="textoTutorial" class="textoTuto">
-        <h2>Esta experiencia le mostrará modelos en tres dimensiones referentes a cada palabra en los botones ↑, para poder verlos, debe posicionar la imagen de referencia frente a la cámara, puede mostrar la imagen desde la pantalla de su teléfono o de manera física imprimiéndola, descargue la imagen aquí:<a id="iRefLinkI" href="https://firebasestorage.googleapis.com/v0/b/espanol-realidad-aumentada.appspot.com/o/referenciaImg.png?alt=media&token=3141630e-b973-4f49-817b-efcbb59ee926" target="_blank"> Link a Imagen de Referencia</a> (Despues de clickear, este mensaje desaparecera)</h2>
-        <h2>Cuando tenga la imagen a su disposición, regrese y presione cualquier boton ↑, mientras muestra la imagen a la camara</h2>
+        <h2 id="textoT">Esta experiencia de realidad aumentada, le permitirá aprender visualmente vocabulario<br></br>Siga las instrucciones a continuación: ⬇️</h2>
+        
+        <button class="buttonPasos" id="buttonPasoI" type="button" style="visibility: visible;">Paso 1</button>
+        <button class="buttonPasos" id="buttonPasoII" type="button" style="visibility: collapse;">Paso 2</button>
+        <button class="buttonPasos" id="buttonContinuar" type="button" style="visibility: collapse;">¡Continuar!</button>
+      
       </div>
 
-      <d id="textoAutor">Autor: N.N. Licencia: S.D. </d>
+      <d id="textoAutor"> </d>
       
 
       <a-entity mindar-image-target="targetIndex: 0">

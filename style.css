@@ -70,6 +70,11 @@ h2.tituloUnidades {
   margin-top: 20px;
 }
 
+h2.tituloAlicia {
+  font-family: "Amaranth-Regular";
+  font-size: 2rem;
+}
+
 input {
   font-size: 2rem;
   background-color: rgb(39, 127, 199);
@@ -94,7 +99,7 @@ button {
 }
 
 button.buttonPasos {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-top: 10px;
     background-color: rgb(19, 90, 223);
     border: none;
@@ -104,21 +109,40 @@ button.buttonPasos {
     font-family: "Amaranth-Regular";
 }
 
+button.buttonPasosI {
+  font-size: 1.8rem;
+  background-color: rgb(19, 90, 223);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: "Amaranth-Regular";
+}
+
 div.textoTuto {
-    background-color: rgb(50, 5, 250);
+    background-color: #1c4489;
     color: aliceblue;
     font-family: "Amaranth-Regular";
+    font-size: 1.5rem;
     align-items: center;
     width: 400px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 6px;
+    padding: 30px;
     border-radius: 20px;
 }
 
 a.enlace {
   color: antiquewhite;
+}
+
+img.imgQR {
+  display: block;
+  margin-left: 150px;
+  width: 100px;
+  height: 100px;
+  right: 10px;
 }
 
 d {

@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/funifelt.ico">
-    <title>Lista "A"-WebAR</title>
+    <title>Letra "A"-WebAR</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
@@ -148,12 +148,16 @@
 
         pasoIButton.addEventListener("click", ()=>{
           document.getElementById("divBotones").setAttribute("style","background-color: ;");
-          document.getElementById("textoT").innerHTML="descargue el código QR: <a class='enlace' href='https://firebasestorage.googleapis.com/v0/b/espanol-realidad-aumentada.appspot.com/o/referenciaImg.png?alt=media&token=3141630e-b973-4f49-817b-efcbb59ee926' target='_blank'>   Codigo QR   </a><br></br>O utilice la tarjeta física para proyectarlo en el recuadro que aparece en su pantalla.";
+          document.getElementById("buttonPasoI").setAttribute("style","visibility: collapse;");
+          document.getElementById("buttonPasoII").setAttribute("style","visibility: visible;");
+          document.getElementById("textoT").innerHTML="Descargue el código QR:<a href='/referenciaImg.png' download='/referenciaImg.png'><img class='imgQR' alt='' src='/referenciaImg.png'></a>O utilice la tarjeta física para proyectarlo en el recuadro que aparece en su pantalla.";
         });
 
         pasoIIButton.addEventListener("click", ()=>{
           document.getElementById("divBotones").setAttribute("style","background-color: #92B8B4; border-radius: 10px; padding: 5px;");
-          document.getElementById("textoT").innerHTML="Luego presione los botones ↑↑ y podrá ver cada una de las palabras.";
+          document.getElementById("buttonPasoII").setAttribute("style","visibility: collapse;");
+          document.getElementById("buttonContinuar").setAttribute("style","visibility: visible;");
+          document.getElementById("textoT").innerHTML="Luego presione los botones y podrá ver cada una de las palabras.";
         });
 
         continuarButton.addEventListener("click", ()=>{
@@ -167,7 +171,7 @@
     </script>
   </head>
   <body>
-
+    <a><img src=""></a>
 
     <a-scene
       mindar-image="imageTargetSrc: /qr (1).mind; maxTrack: 2; uiScanning:yes"
@@ -190,15 +194,16 @@
       <h1 class="textoCentral" id="textoTitulo">Bienvenidos a la realidad aumentada<br>Unidad dos: Diptongo - Letra A</br></h1>
         
       <div id="textoTutorial" class="textoTuto">
+  
+        <h2 id="textoT">Esta experiencia de realidad aumentada, le permitirá aprender visualmente vocabulario<br></br>Siga las instrucciones a continuación: ⬇️</h2>
         
-        <h2 id="textoT">Esta experiencia de realidad aumentada le permitirá aprender visualmente vocabulario ↑↑ <br>siga las instrucciones a continuación: ⬇️</br></h2>
-        
-        <button class="buttonPasos" id="buttonPasoI" type="button">Paso 1</button>
-        <button class="buttonPasos" id="buttonPasoII" type="button">Paso 2</button>
-        <button class="buttonPasos" id="buttonContinuar" type="button">¡Continuar!</button>
+        <button class="buttonPasos" id="buttonPasoI" type="button" style="visibility: visible;">Paso 1</button>
+        <button class="buttonPasos" id="buttonPasoII" type="button" style="visibility: collapse;">Paso 2</button>
+        <button class="buttonPasos" id="buttonContinuar" type="button" style="visibility: collapse;">¡Continuar!</button>
+      
       </div>
 
-      <d id="textoAutor">Autor: N.N. Licencia: S.D. </d>
+      <d id="textoAutor"> </d>
       
 
       <a-entity mindar-image-target="targetIndex: 0">
