@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/funifelt.ico">
-    <title>Letra "R"-WebAR</title>
+    <title>Lista "R"-WebAR</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
@@ -25,10 +25,7 @@
         const armarioButton = document.querySelector("#buttonArmario");
         const mermeladaButton = document.querySelector("#buttonMermelada");
         const cuatroButton = document.querySelector("#buttonCuatro");
-        
-        const continuarButton = document.querySelector("#buttonContinuar");
-        const pasoIButton = document.querySelector("#buttonPasoI");
-        const pasoIIButton = document.querySelector("#buttonPasoII");
+        const enlaceImgRef = document.querySelector("#iRefLinkI");
 
         /* boton rojo */
 
@@ -36,16 +33,16 @@
           document
             .getElementById("gltf-model")
             .setAttribute(
-              "src", "./modelos/listaR/hidrante_de_agua.glb"
+              "src", "./modelos/listaR/Rosa.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.1 0.1 0.1");
+            .setAttribute("scale", "0.2 0.2 0.2");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 -0.5 0");
+            .setAttribute("position", "0 0.4 0");
           
-            document.getElementById("textoAutor").innerHTML = "'Hidrante De Agua' by J.César Navarrete <br>is licensed under Creative Commons Attribution.</br>";
+            document.getElementById("textoAutor").innerHTML = "'Rosa' by por Joseph Barbosa <br>Todos los derechos reservados.</br>";
 
             document.getElementById("textoTitulo").innerHTML = '<a style="background-color: aqua">r</a>ojo';
           
@@ -61,7 +58,7 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/reloj_xd.glb"
+              "./modelos/listaR/Reloj.glb"
             );
           document
             .getElementById("gltf-model")
@@ -70,7 +67,7 @@
             .getElementById("gltf-model")
             .setAttribute("position", "0 0 0");
           
-            document.getElementById("textoAutor").innerHTML = "'reloj xd' by 0ppai <br>is licensed under Creative Commons Attribution.</br>";
+            document.getElementById("textoAutor").innerHTML = "'Reloj' por Joseph Barbosa <br>Todos los derechos reservados.</br>";
 
             document.getElementById("textoTitulo").innerHTML = '<a style="background-color: aqua">r</a>eloj';
           
@@ -86,16 +83,16 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/flecha.glb"
+              "./modelos/listaR/Recta.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.4 0.4 0.4");
+            .setAttribute("scale", "0.2 0.2 0.2");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 0 0");
+            .setAttribute("position", "0 -0.4 0");
           
-            document.getElementById("textoAutor").innerHTML = "'Flecha' by cin.rvrauth <br>is licensed under Creative Commons Attribution.</br>";
+            document.getElementById("textoAutor").innerHTML = "'Recta' by por Joseph Barbosa <br>Todos los derechos reservados.</br>";
           
             document.getElementById("textoTitulo").innerHTML = '<a style="background-color: aqua">r</a>ecta';
           
@@ -111,16 +108,16 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/mouse.glb"
+              "./modelos/listaR/Ratones.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "3 3 3");
+            .setAttribute("scale", "0.2 0.2 0.2");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.2 0");
           
-            document.getElementById("textoAutor").innerHTML = "'Mouse' by Christian Gentry <br>is licensed under Creative Commons Attribution.</br>";
+            document.getElementById("textoAutor").innerHTML = "'Ratones' by por Joseph Barbosa <br>Todos los derechos reservados.</br>";
 
             document.getElementById("textoTitulo").innerHTML = '<a style="background-color: aqua">r</a>atones';
           
@@ -136,16 +133,16 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/arbol_alexia.glb"
+              "./modelos/listaR/Ramas.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "4 4 4");
+            .setAttribute("scale", "0.5 0.5 0.5");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 -0.4 0");
+            .setAttribute("position", "0 -1.5 -1");
           
-            document.getElementById("textoAutor").innerHTML = "'Arbol Alexia' by alexia_lynn <br>is licensed under Creative Commons Attribution.</br>";
+            document.getElementById("textoAutor").innerHTML = "'Ramas' by por Joseph Barbosa <br>Todos los derechos reservados.</br>";
           
             document.getElementById("textoTitulo").innerHTML = '<a style="background-color: aqua">r</a>amas';
           
@@ -161,14 +158,14 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/tierra.glb"
+              "./modelos/listaR/Tierra.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.15 0.15 0.15");
+            .setAttribute("scale", "1 1 1");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 0 0");
+            .setAttribute("position", "0 -0.9 0");
           
             document.getElementById("textoAutor").innerHTML = "'Tierra' by Sara Robisco <br>is licensed under Creative Commons Attribution-NonCommercial.</br>";
           
@@ -186,14 +183,14 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/margarita_flower.glb"
+              "./modelos/listaR/Margaritas.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.6 0.6 0.6");
+            .setAttribute("scale", "0.2 0.2 0.2");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 -0.5 0");
+            .setAttribute("position", "0 0 0");
           
             document.getElementById("textoAutor").innerHTML = "'Margarita flower' by Maf'j Alvarez <br>is licensed under Creative Commons Attribution.</br>";
 
@@ -211,11 +208,11 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/jardin_flores-002.glb"
+              "./modelos/listaR/Flores.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.06 0.06 0.06");
+            .setAttribute("scale", "0.5 0.5 0.5");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 0 0");
@@ -236,11 +233,11 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/escaleras.glb"
+              "./modelos/listaR/Escaleras.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.03 0.03 0.03");
+            .setAttribute("scale", " 1 1 1");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.5 0");
@@ -261,11 +258,11 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/naranjas.glb"
+              "./modelos/listaR/Naranjas.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.5 0.5 0.5");
+            .setAttribute("scale", "0.4 0.4 0.4");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 0 0");
@@ -286,14 +283,14 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/gorilla_tag_halloween_bat.glb"
+              "./modelos/listaR/Murcielago.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "9 9 9");
+            .setAttribute("scale", "0.5 0.5 0.5");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 0 0");
+            .setAttribute("position", "0 -0.5 0");
           
             document.getElementById("textoAutor").innerHTML = "'Gorilla Tag Halloween Bat' by KPMisParrot <br>is licensed under Creative Commons Attribution.</br>";
           
@@ -311,11 +308,11 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/wreath.glb"
+              "./modelos/listaR/Guirnalda.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.3 0.3 0.3");
+            .setAttribute("scale", "0.7 0.7 0.7");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 0 0");
@@ -336,11 +333,11 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/armario.glb"
+              "./modelos/listaR/Armario.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "0.3 0.3 0.3");
+            .setAttribute("scale", "0.2 0.2 0.2");
           document
             .getElementById("gltf-model")
             .setAttribute("position", "0 -0.5 0");
@@ -361,7 +358,7 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/low_poly_jar.glb"
+              "./modelos/listaR/Mermelada.glb"
             );
           document
             .getElementById("gltf-model")
@@ -386,14 +383,14 @@
             .getElementById("gltf-model")
             .setAttribute(
               "src",
-              "./modelos/listaR/3d_number_-_4_four.glb"
+              "./modelos/listaR/Cuatro.glb"
             );
           document
             .getElementById("gltf-model")
-            .setAttribute("scale", "2 2 2");
+            .setAttribute("scale", "1 1 1");
           document
             .getElementById("gltf-model")
-            .setAttribute("position", "0 0 0");
+            .setAttribute("position", "0 -3 -9");
           
             document.getElementById("textoAutor").innerHTML = "'3D Number - 4 (FOUR)' by Jihambru <br>is licensed under Creative Commons Attribution.</br>";
           
@@ -404,29 +401,12 @@
           );
         });
 
-        /*botones tutorial*/
+        /*click enlace imagen de referencia*/
 
-        pasoIButton.addEventListener("click", ()=>{
-          document.getElementById("divBotones").setAttribute("style","background-color: ;");
-          document.getElementById("buttonPasoI").setAttribute("style","visibility: collapse;");
-          document.getElementById("buttonPasoII").setAttribute("style","visibility: visible;");
-          document.getElementById("textoT").innerHTML="Descargue el código QR:<a href='/referenciaImg.png' download='/referenciaImg.png'><img class='imgQR' alt='' src='/referenciaImg.png'></a>O utilice la tarjeta física para proyectarlo en el recuadro que aparece en su pantalla.";
-        });
-
-        pasoIIButton.addEventListener("click", ()=>{
-          document.getElementById("divBotones").setAttribute("style","background-color: #92B8B4; border-radius: 10px; padding: 5px;");
-          document.getElementById("buttonPasoII").setAttribute("style","visibility: collapse;");
-          document.getElementById("buttonContinuar").setAttribute("style","visibility: visible;");
-          document.getElementById("textoT").innerHTML="Luego presione los botones y podrá ver cada una de las palabras.";
-        });
-
-        continuarButton.addEventListener("click", ()=>{
-          document.getElementById("divBotones").setAttribute("style","background-color: ;");
+        enlaceImgRef.addEventListener("click", ()=>{
           document.getElementById("textoTutorial").innerHTML="";
-          document.getElementById("textoTutorial").setAttribute("style","padding: 0;");
-          console.log("click paso 3"); 
         });
- 
+        
       });
     </script>
   </head>
@@ -442,7 +422,7 @@
 
       <a-camera position="0 0 0" look-controls="enabled: true"></a-camera>
 
-      <div id="divBotones">
+      <div>
         <button type="button" id="buttonRojo">rojo</button>
         <button type="button" id="buttonReloj">reloj</button>
         <button type="button" id="buttonRecta">recta</button>
@@ -460,18 +440,14 @@
         <button type="button" id="buttonCuatro">cuatro</button>
       </div>
 
-      <h1 class="textoCentral" id="textoTitulo"> Realidad aumentada - Letra R </h1>
+      <h1 class="textoCentral" id="textoTitulo">Bienvenidos a la realidad aumentada<br>Unidades Adicionales - Letra R</br></h1>
         
       <div id="textoTutorial" class="textoTuto">
-        <h2 id="textoT">Esta experiencia de realidad aumentada, le permitirá aprender visualmente vocabulario<br></br>Siga las instrucciones a continuación: ⬇️</h2>
-        
-        <button class="buttonPasos" id="buttonPasoI" type="button" style="visibility: visible;">Paso 1</button>
-        <button class="buttonPasos" id="buttonPasoII" type="button" style="visibility: collapse;">Paso 2</button>
-        <button class="buttonPasos" id="buttonContinuar" type="button" style="visibility: collapse;">¡Continuar!</button>
-      
+        <h2>Esta experiencia le mostrará modelos en tres dimensiones referentes a cada palabra en los botones ↑, para poder verlos, debe posicionar la imagen de referencia frente a la cámara, puede mostrar la imagen desde la pantalla de su teléfono o de manera física imprimiéndola, descargue la imagen aquí:<a id="iRefLinkI" href="https://firebasestorage.googleapis.com/v0/b/espanol-realidad-aumentada.appspot.com/o/referenciaImg.png?alt=media&token=3141630e-b973-4f49-817b-efcbb59ee926" target="_blank"> Link a Imagen de Referencia</a> (Despues de clickear, este mensaje desaparecera)</h2>
+        <h2>Cuando tenga la imagen a su disposición, regrese y presione cualquier boton ↑, mientras muestra la imagen a la camara</h2>
       </div>
 
-      <d id="textoAutor"> </d>
+      <d id="textoAutor">Autor: N.N. Licencia: S.D. </d>
       
 
       <a-entity mindar-image-target="targetIndex: 0">
